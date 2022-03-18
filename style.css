@@ -1,0 +1,330 @@
+.kfclogo{
+  cursor: pointer; /*Used so that the cursor turns into a pointer when hovered over the logo.*/
+  justify-content: space-between;
+  position: relative;
+  padding: 0px 40px;
+  bottom: -13px;
+  vertical-align: middle; /* This will move the logo 20px up *//* This will move the logo 20px to the right. */
+}/*without this section of code the "kfc" logo will be on the far left which isnt accurate to the real website.*/
+
+.navigationbar {
+  text-align: center;
+  position: relative;
+  bottom: 20px;
+  
+}/*This section will position the navigation bar to the center of the screen, along with other adjustemnts like moving the text down a few pixels.*/
+
+.navigationbar a:link{
+  font-family: 'Oswald'; /*This will change the font to something that resembles the kfc website navigation buttons.*/
+  overflow: hidden;
+  color: #000000; /*Changes the color of the text.*/
+  text-decoration: none;
+  font-weight: bolder;
+  letter-spacing: 0.8px;
+  font-size: 14px; /*This line manipulates the size of the font for my navigation buttons.*/
+}
+
+.navigationbar a:hover{
+  color: gray;
+  text-decoration: none;
+}
+.navigationbar a:active{
+  color: gray;
+  text-decoration: none;
+} /*Both the active and hover sections cause the buttons to appear gray when the cursor is hovering over and clicking them, just like the kfc website navigation buttons. The ACTIVE function needs to be after HOVER in order for it to properly work.*/
+
+.kfcsplash{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}/*This section of code automatically aligns the image to the center of the screen.*/
+
+.button1{
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;
+}/*This aligns the first button used to the center of the screen.*/
+
+.findoutmore{
+  background-color: #e81341;
+  padding: 13px 45px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 12px;
+}/*The findoutmore section will create our first button for my website. All adjustments made are meant to replicate the button from the KFC website as closely as I could.*/
+
+.button1 a:hover{
+  background-color:#9e102e;
+  text-decoration: none;
+}
+.button1 a:active{
+  background-color:#9e102e;
+  text-decoration: none;
+}/*This causes the first button to change color when the cursor hovers over the 'Find out more' button.*/
+
+.welcome{
+  text-align: center;
+  text-decoration: underline;/*Adds an underline to the header*/
+  text-decoration-color: red;/*Changes the color of the underline from black to red*/
+  text-decoration-thickness: 3px; /*This will adjust the thickness and color of the underline under the text.*/
+  text-underline-position: 5px;
+  font-family: 'Oswald';
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.chicken{
+  padding-top: 100px;
+  padding-right: 400px;
+  padding-left: 300px;
+}/*This moves the kfc chicken head in position.*/
+
+.para1header{
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bolder;/*This makes the text bold*/
+  font-size: 30px;
+  padding-top: 150px; 
+  padding-left: 50px;
+}/*This manipulates the header in position, on the real kfc website the header is slightly to the left. I have managed to copy this with the 'padding-left' line of code.*/
+
+.para1{
+  font-family: Arial, Helvetica, sans-serif;/*This is the font used in the real kfc website for their paragraph.*/
+  padding-left: 35px;
+  font-size: 18px;/*Adjusts the size of the text.*/
+  display: inline-block;/*display:inline-block aligns both the image and the text to appear on the same line.*/
+}
+
+.button2{
+  padding-left: 35px;
+  display: inline-block;
+}/*Moves the second button in position*/
+
+.button2 a:hover{
+  background-color:#9e102e;
+  text-decoration: none;
+}
+.button2 a:active{
+  background-color:#9e102e;
+  text-decoration: none;
+}/*Causes the button to appear a different color when the cursor is hovering over it.*/
+
+.splash2{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 75px; 
+  padding-bottom: 30px;/*This moves the element in position to what the real KFC website looks like.*/
+  display: block;
+}/*Aligns the second splash image to the center of the screen.*/
+
+.button3{
+  text-align: center;
+  padding-bottom: 30px;
+}/*Aligns the third button to the center of the screen.*/
+
+.button3 a:hover{
+  background-color:#9e102e;
+  text-decoration: none;
+}
+.button3 a:active{
+  background-color:#9e102e;
+  text-decoration: none;
+}/*Causes the button to appear a different color when the cursor is hovering over it.*/
+
+.box1{
+  display: flex;/*Display flex causes the items to fill in any available space.*/
+  background-color: #210303;/*Changes the background color of the box, the first box displays a darker color than the second one.*/
+  width: 49%;/*Adjusts the width of the box, the value has to be '49%' otherwise the boxes will stack on one another.*/
+  float: left;/*Moves the box to the left hand side of the screen.*/
+  margin: 3px;/*Adds space around the boxes, this is so they do not appear side by side with no space between them.*/
+  flex-direction: column;/*Causes the text to appear in a column, rather than side by side.*/
+  padding-bottom: 300px;/*Adds space to the bottom of the box, adjusts the size.*/
+}
+.box2{
+  background-color: #e81341;
+  width: 49%;
+  float: right;
+  margin: 3px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 322px;
+}/*This section of code creates boxes side by side.*/
+
+.box1text, .box2text{/*You can manipulate 2 classes at the same time by using a comma.*/
+  color: white;/*Changes the color of the text to white.*/
+  text-align: center;/*Aligns the text to the center of the box.*/
+  font-family: sans-serif;/*Changes the font of the text.*/
+  top: 50%;
+  transform: translateY(50%)/*This moves the text to the center of the screen, both horizontally and vertically.*/
+}
+
+.boxhead1{
+  padding-top: 10px; /*Adds space above the header.*/
+  font-family: 'Oswald';/*Changes the font of the header.*/
+}
+
+.boxhead2{
+  padding-top: 10px;
+  font-family: 'Oswald';
+  text-decoration: underline;/*Adds an underline to the header in the second box.*/
+}
+
+.boxpara1, .boxpara2{
+  font-size: 20px;
+  padding-bottom: 30px;
+}/*Adjusts the size of the text and the space beneath the paragraph.*/
+
+.apply{
+  border: 3px solid white;
+  padding: 13px 45px;
+  color: white;
+  background-color: #210303;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.apply a:hover{
+  background-color:#9e102e;
+  text-decoration: none;
+}
+.apply a:active{
+  background-color:#9e102e;
+  text-decoration: none;
+}/*This section is very similar to the code used for the "Find out more" buttons found earlier in the website, only slight changes are made such as color and the inclusion of a white border.*/
+
+.enquire{
+  border: 3px solid white;
+  padding: 13px 45px;
+  color: white;
+  background-color: #e81341;
+  text-decoration: none;
+  font-family: 'Oswald';
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.enquire a:hover{
+  background-color:#9e102e;
+  text-decoration: none;
+}
+.enquire a:active{
+  background-color:#9e102e;
+  text-decoration: none;
+}
+
+.shh{
+  color: white
+}
+
+.chickendeliver{
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-size: 26px;
+  font-weight: bold;/*Makes the text appear as bold.*/
+  height: -50px;
+  float: left;
+  padding-left: 540px
+}/*Adjusts the text so that it appears on the left of the image, without the 'float:left' the text and image would stack on top of eachother.*/
+
+.justeat{
+  padding-left: 40px;
+  cursor: pointer;
+  display: inline-block;
+}/*Moves the image inline with the text, also adjusts the space between text and image.*/
+
+.footer-container{
+  background-color: black;/*Turns the background of the footer to black.*/
+  padding-bottom: 1rem;/*Creates space underneath the footer, 1rem = to 20 pixels.*/
+}
+
+.footer{
+  display: flex;/*Without the display:flex the code would stack on top of eachother. This causes the divs to appear side by side.*/
+  justify-content: left/*Aligns the text to the left of the screen, just like the real kfc website.*/
+}
+
+.footer-heading{
+  display: flex;/*This is needed because it causes the individual divs to stack their text on top of eachother, without it the text is stretched along horizontally.*/
+  flex-direction: column;
+  font-family: 'Oswald';
+  margin: 2rem;/*Margin is used to add space all around the text.*/
+  margin-right: 6rem;/*Adds space to the right of the text.*/
+  font-weight: bolder;
+  font-size: 14px;
+  letter-spacing: 1px;
+}/*This section manipulates the text itself such as the size, font, weight etc.*/
+
+.footer-heading a:link{
+  text-decoration: none;/*This line of code is used to remove the underline that comes with using links.*/
+  color: white;/*Changes the text to white.*/
+  margin: 3px;
+  margin-right: 35px;
+}
+
+.footer-heading a:hover{
+  color:lightgray;
+  text-decoration: none;
+}
+.footer-heading a:active{
+  color:lightgray;
+  text-decoration: none;
+}/*Makes the links turn gray when the cursor hovers over the text.*/
+
+.footer-end{
+  flex-direction: column;
+  justify-content: right;
+  font-family: 'Oswald';
+  font-weight: bold;
+  float: right; 
+  padding-left: 800px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-top: 10px
+}/*This section of code manipulates the text on the right hand side of the footer.*/
+
+.socialmedia{
+  width: 18rem;/*Adjusts the width of the image.*/
+  height: auto;
+  display: inline-block;
+  margin-top: 0px;/*Without this there will be a small gap between the text and the image, this removes the gap.*/
+  cursor: pointer;
+}
+
+.footer-end p{
+  color: white;/*Changes the color of the text to white.*/
+  margin-bottom: 0px;
+}
+
+hr{
+  color: white;
+  width: 96%;/*This is needed to squish the header bar by a small amount, without it the header would appear left to right without space.*/
+}
+
+.kfclogoalt{
+  padding: 2rem;/*Adds space all around the image.*/
+}
+
+.legal{
+  font-family: sans-serif;
+  font-size: 13px;
+  color: white;
+  float: right;/*Positions the div to the right of the screen.*/
+  margin: 2rem;/*Adds space all around the div.*/
+  padding-top: 2.3rem;/*Adds space above the text to properly position it.*/
+}
+
+.legal a{
+  color: white;
+  text-decoration: none;
+  padding: 0px 15px;/*Adds space BETWEEN the links.*/
+}
+
+.legal p{
+  display: inline;/*Positions the paragraph inline with the links, without it the paragraph and links stack on one another.*/
+}
